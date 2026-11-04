@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/ソリューション項目/">
+    <File Path="OhanaLib.props" />
+  </Folder>
+  <Project Path="Font/Font.vcxproj" Id="b98ec423-e1fe-4907-8973-356554804cd4" />
+  <Project Path="gx/gx.vcxproj" Id="12001f4f-8f12-4b69-8df3-283bbb79e18a" />
+  <Project Path="macros/macros.vcxproj" Id="703325d0-b454-4626-b443-d107269e8301" />
+  <Project Path="mem/mem.vcxproj" Id="70652756-7787-4727-b207-30faa33970ce" />
+  <Project Path="ohn/ohn.vcxproj" Id="7f19d129-a677-4710-96d3-f19ee1389a36" />
+  <Project Path="snd/snd.vcxproj" Id="986b30a9-2c9c-4ed9-8b7e-2955f04221a4" />
+  <Project Path="Time/Time.vcxproj" Id="e8bc5a65-93b6-48f2-b7d1-db5f3b207ccc" />
+</Solution>

@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\EventEditor.obj",
+            "outputs": [
+                "x64\\Debug\\EventEditor.cpp.obj.dt.module.json",
+                "x64\\Debug\\EventEditor.cpp.obj.dt.d.json"
+            ],
+            "requires": [
+                {
+                    "logical-name": "ohana.ast"
+                },
+                {
+                    "logical-name": "ohana.bytecode"
+                },
+                {
+                    "logical-name": "ohana.bytecode_io"
+                },
+                {
+                    "logical-name": "ohana.compiler"
+                },
+                {
+                    "logical-name": "ohana.lexer"
+                },
+                {
+                    "logical-name": "ohana.parser"
+                }
+            ]
+        }
+    ]
+}

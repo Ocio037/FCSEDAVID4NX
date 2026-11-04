@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Timer.obj",
+            "outputs": [
+                "x64\\Debug\\Timer.inl.obj.dt.module.json",
+                "x64\\Debug\\Timer.inl.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

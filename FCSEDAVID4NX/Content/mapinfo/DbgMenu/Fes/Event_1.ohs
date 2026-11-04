@@ -1,0 +1,15 @@
+evento main:
+    jugador_habilitar(falso)
+    menu_crear("")
+    mostrar(compilacion_info())
+    menu_opcion("0 ActionTest")
+    menu_opcion("1 DbgMenu")
+    menu_mostrar()
+
+    variable opcion = menu_esperar()
+    menu_cerrar()
+
+    si opcion == 0:
+        mapa_cargar(0)
+    si opcion == 1:
+        mapa_cargar(1)

@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Parser.obj",
+            "outputs": [
+                "x64\\Debug\\Parser.cppm.ifc.dt.module.json",
+                "x64\\Debug\\Parser.cppm.ifc.dt.d.json",
+                "x64\\Debug\\ohana.parser.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.parser",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\parser.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "ohana.bytecode"
+                },
+                {
+                    "logical-name": "ohana.ast"
+                },
+                {
+                    "logical-name": "ohana.lexer"
+                }
+            ]
+        }
+    ]
+}

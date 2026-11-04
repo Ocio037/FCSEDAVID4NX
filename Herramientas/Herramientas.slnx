@@ -1,0 +1,18 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ArcPacker/ArcPacker.csproj" Id="81370d70-4e0b-44fc-8b31-003225651caf" />
+  <Project Path="AtlasTemplateFontGen/AtlasTemplateFontGen.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="08b290a8-5f2c-44fc-80b8-3072d3197361">
+    <Platform Project="AnyCPU" />
+    <Build Project="false" />
+  </Project>
+  <Project Path="EventEditor/EventEditor.vcxproj" Id="03025b8d-bab7-4d04-b20a-86f93f239b8e">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="Foca3DEditor/Foca3DEditor.csproj" />
+  <Project Path="FocaCollisionEditor/FocaCollisionEditor.csproj" Id="28ba23fd-b78a-413b-9150-bd733cc00ef2" />
+  <Project Path="TextureConverter/TextureConverter.vcxproj" Id="4541e0d9-1da6-43b1-b6f3-22f4fa545bfa" />
+</Solution>

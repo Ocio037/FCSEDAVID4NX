@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Foca3DEditor\Models\Fc3dFile.cs" Link="Models\Fc3dFile.cs" />
+    <Compile Include="..\Foca3DEditor\Models\Fc3dModels.cs" Link="Models\Fc3dModels.cs" />
+  </ItemGroup>
+
+</Project>

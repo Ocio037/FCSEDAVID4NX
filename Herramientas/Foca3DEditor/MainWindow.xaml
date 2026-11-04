@@ -1,0 +1,153 @@
+<Window x:Class="Foca3DEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Foca3D Editor" Height="600" Width="900" WindowState="Maximized"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Background="#F0F0F0">
+            <MenuItem Header="File">
+                <MenuItem Header="New Project" Click="NewProject_Click"/>
+                <MenuItem Header="Open Project..." Click="OpenProject_Click"/>
+                <MenuItem Header="Save Project" Click="SaveProject_Click"/>
+                <MenuItem Header="Save Project As..." Click="SaveProjectAs_Click"/>
+                <Separator/>
+                <MenuItem Header="Import..." Click="Abrir_Click"/>
+                <MenuItem Header="Export..." Click="Export_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="Salir_Click"/>
+            </MenuItem>
+            <MenuItem Header="Edit"/>
+            <MenuItem Header="View">
+                <MenuItem Header="Centrar modelo" Click="FocusView_Click" InputGestureText="F"/>
+                <Separator/>
+                <MenuItem Header="Vista Frontal" Click="FrontView_Click" InputGestureText="1"/>
+                <MenuItem Header="Vista Trasera" Click="BackView_Click"/>
+                <MenuItem Header="Vista Lateral (Derecha)" Click="SideView_Click" InputGestureText="3"/>
+                <MenuItem Header="Vista Lateral (Izquierda)" Click="LeftView_Click"/>
+                <MenuItem Header="Vista Superior" Click="TopView_Click" InputGestureText="7"/>
+                <MenuItem Header="Perspectiva 3D" Click="IsoView_Click" InputGestureText="5"/>
+                <Separator/>
+                <MenuItem Header="Alternar Eje Frontal (X / Y)" Click="ToggleFrontAxis_Click"/>
+            </MenuItem>
+            <MenuItem Header="Preview"/>
+            <MenuItem Header="Tools"/>
+            <MenuItem Header="Help"/>
+        </Menu>
+
+        <ToolBar Grid.Row="1" Background="#F2F2F2" Padding="2">
+            <Button Click="OpenProject_Click" ToolTip="Open Project" Padding="4,2">
+                <TextBlock Text="📂"/>
+            </Button>
+            <Button Click="SaveProject_Click" ToolTip="Save Project" Padding="4,2">
+                <TextBlock Text="💾"/>
+            </Button>
+            <Separator/>
+            <Button ToolTip="Undo" Padding="4,2">
+                <TextBlock Text="↩"/>
+            </Button>
+            <Button ToolTip="Redo" Padding="4,2">
+                <TextBlock Text="↪"/>
+            </Button>
+        </ToolBar>
+
+        <Grid Grid.Row="2" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Panel: File View -->
+            <Border Grid.Column="0" BorderBrush="#CCCCCC" BorderThickness="1" Background="#F9F9F9">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" BorderBrush="#CCCCCC" BorderThickness="0,0,0,1" Background="#E9E9E9">
+                        <TextBlock Text="File View" FontSize="11" Padding="4,2"/>
+                    </Border>
+                    <TreeView x:Name="MainTreeView" Grid.Row="1" Background="Transparent" BorderThickness="0" SelectedItemChanged="MainTreeView_SelectedItemChanged" MouseDoubleClick="MainTreeView_MouseDoubleClick">
+                        <TreeViewItem x:Name="ModelsFolder" Header="Model (0)" IsExpanded="True">
+                            <TreeViewItem.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Añadir modelo..." Click="MdlMenuItem_Click"/>
+                                </ContextMenu>
+                            </TreeViewItem.ContextMenu>
+                        </TreeViewItem>
+                        <TreeViewItem x:Name="TexturesFolder" Header="Texture (0)" IsExpanded="True">
+                            <TreeViewItem.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Añadir textura..." Click="TxtMenuItem_Click"/>
+                                </ContextMenu>
+                            </TreeViewItem.ContextMenu>
+                        </TreeViewItem>
+                    </TreeView>
+                </Grid>
+            </Border>
+
+            <GridSplitter Grid.Column="1" Width="4" HorizontalAlignment="Stretch" Background="#E0E0E0"/>
+
+            <!-- Right Panel: Details (Materials & 3D Viewport) -->
+            <Grid Grid.Column="2">
+                <Border Background="#7F7F7F" BorderBrush="#CCCCCC" BorderThickness="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Details" FontSize="11" Padding="4,2" Background="#A9A9A9" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+                        
+                        <ScrollViewer Grid.Row="1" MaxHeight="200" VerticalScrollBarVisibility="Auto">
+                            <StackPanel x:Name="MaterialsPanel" Margin="4" Background="#F2F2F2">
+                                <TextBlock Text="Selecciona un modelo para ver sus materiales" Foreground="DarkGray" Padding="4" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <Grid Grid.Row="2" Background="Transparent"
+                              MouseRightButtonDown="Viewport_MouseRightButtonDown"
+                              MouseRightButtonUp="Viewport_MouseRightButtonUp"
+                              MouseDown="Viewport_MouseDown"
+                              MouseUp="Viewport_MouseUp"
+                              MouseMove="Viewport_MouseMove"
+                              MouseWheel="Viewport_MouseWheel">
+                            <Viewport3D x:Name="Viewport" ClipToBounds="True" IsHitTestVisible="False">
+                                <Viewport3D.Camera>
+                                    <PerspectiveCamera x:Name="MainCamera" Position="-2,-4,2" LookDirection="2,4,-2" UpDirection="0,0,1" FieldOfView="60"/>
+                                </Viewport3D.Camera>
+                                <ModelVisual3D>
+                                    <ModelVisual3D.Content>
+                                        <Model3DGroup x:Name="ModelGroup">
+                                            <DirectionalLight Color="White" Direction="-1,1,-1"/>
+                                            <DirectionalLight Color="#A0A0A0" Direction="1,-1,1"/>
+                                            <AmbientLight Color="#606060"/>
+                                        </Model3DGroup>
+                                    </ModelVisual3D.Content>
+                                </ModelVisual3D>
+                            </Viewport3D>
+
+                            <!-- Camera Quick Controls Overlay -->
+                            <Border HorizontalAlignment="Right" VerticalAlignment="Top" Margin="8" Background="#80222222" CornerRadius="4" Padding="3">
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="👁️ Centrar (F)" Click="FocusView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Centrar y enfocar modelo (Tecla F)"/>
+                                    <Button Content="Frente" Click="FrontView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Vista frontal (Tecla 1)"/>
+                                    <Button Content="Atrás" Click="BackView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Vista trasera"/>
+                                    <Button Content="Lado" Click="SideView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Vista lateral (Tecla 3)"/>
+                                    <Button Content="Arriba" Click="TopView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Vista superior (Tecla 7)"/>
+                                    <Button Content="3D" Click="IsoView_Click" Padding="6,2" Margin="2" Background="#F0F0F0" BorderThickness="1" FontSize="11" ToolTip="Perspectiva 3D (Tecla 5)"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

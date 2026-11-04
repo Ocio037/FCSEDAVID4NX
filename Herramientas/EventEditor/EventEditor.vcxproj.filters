@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="OhanaScript Modules">
+      <UniqueIdentifier>{3B499C6E-10B2-478F-A2FA-AEC71471B9F5}</UniqueIdentifier>
+      <Extensions>cppm</Extensions>
+    </Filter>
+    <Filter Include="OhanaScript Source Files">
+      <UniqueIdentifier>{7E8D6322-103C-4C84-B5EE-7B9FC07E4497}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="EventEditor.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="EventEditor.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="EventEditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="EventEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\Ast.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\Bytecode.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\BytecodeIO.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\Compiler.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\Lexer.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\include\Parser.cppm">
+      <Filter>OhanaScript Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\source\Bytecode.cpp">
+      <Filter>OhanaScript Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\source\BytecodeIO.cpp">
+      <Filter>OhanaScript Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\source\Compiler.cpp">
+      <Filter>OhanaScript Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\source\Lexer.cpp">
+      <Filter>OhanaScript Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OhanaScript\source\Parser.cpp">
+      <Filter>OhanaScript Source Files</Filter>
+    </ClCompile>
+    <ResourceCompile Include="$pro_name$.rc">
+    </ResourceCompile>
+    <None Include="$pro_name$.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="$pro_name$.def">
+      <Filter>Resource Files</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

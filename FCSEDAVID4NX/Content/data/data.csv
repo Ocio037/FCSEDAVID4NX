@@ -1,0 +1,11 @@
+foca_vert.spv,0,0,0,0,0
+foca_frag.spv,1,0,0,0,0
+titi.f3d,2,0,0,0,0
+titimdl.ctx,3,0,0,0,0
+foca_aa_vert.spv,4,0,0,0,0
+foca_aa_frag.spv,5,0,0,0,0
+foca_aa_present_frag.spv,6,0,0,0,0
+DebugFont.tga,7,0,0,0,0
+DebugFont.bin,8,0,0,0,0
+font_vert.spv,9,0,0,0,0
+font_frag.spv,10,0,0,0,0

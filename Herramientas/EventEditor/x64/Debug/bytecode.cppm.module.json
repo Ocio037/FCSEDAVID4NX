@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Bytecode.cppm.obj",
+            "outputs": [
+                "C:\\Project_MX\\Uadeo\\videojuegos\\Herramientas\\EventEditor\\x64\\Debug\\vc145.pdb",
+                "x64\\Debug\\",
+                "C:\\Project_MX\\Uadeo\\videojuegos\\Herramientas\\EventEditor\\x64\\Debug\\Bytecode.cppm.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.bytecode",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\bytecode.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

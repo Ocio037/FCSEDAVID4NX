@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Bytecode.obj",
+            "outputs": [
+                "x64\\Release\\Bytecode.cppm.ifc.dt.module.json",
+                "x64\\Release\\Bytecode.cppm.ifc.dt.d.json",
+                "x64\\Release\\ohana.bytecode.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.bytecode",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\bytecode.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

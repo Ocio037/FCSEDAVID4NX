@@ -1,0 +1,37 @@
+{
+  "Models": [
+    "C:\\Project_MX\\Uadeo\\videojuegos\\FCSEDAVID4NX\\Art\\Map\\ActionTest\\ActionTest.f3d"
+  ],
+  "Textures": [
+    {
+      "Name": "safe.l4",
+      "Format": "l4",
+      "SourcePath": "C:\\Project_MX\\Uadeo\\videojuegos\\FCSEDAVID4NX\\Art\\Map\\TitiTexturePackField\\build\\safe.l4",
+      "Width": 0,
+      "Height": 0,
+      "IncludeData": false
+    },
+    {
+      "Name": "ModelBase_0.ctx",
+      "Format": "ctx",
+      "SourcePath": "C:\\Project_MX\\Uadeo\\videojuegos\\FCSEDAVID4NX\\Art\\Map\\TitiTexturePackField\\build\\ModelBase_0.ctx",
+      "Width": 128,
+      "Height": 128,
+      "IncludeData": true
+    },
+    {
+      "Name": "ModelBase_1.ctx",
+      "Format": "ctx",
+      "SourcePath": "C:\\Project_MX\\Uadeo\\videojuegos\\FCSEDAVID4NX\\Art\\Map\\TitiTexturePackField\\build\\ModelBase_1.ctx",
+      "Width": 128,
+      "Height": 128,
+      "IncludeData": true
+    }
+  ],
+  "MaterialAssignments": {
+    "ActionTest.f3d_cielo": "safe.l4",
+    "ActionTest.f3d_Material.001": "ModelBase_0.ctx",
+    "ActionTest.f3d_Material.002": "ModelBase_1.ctx"
+  },
+  "ModelIncludeData": {}
+}

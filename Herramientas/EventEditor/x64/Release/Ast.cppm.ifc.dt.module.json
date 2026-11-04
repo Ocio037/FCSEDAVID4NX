@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Ast.obj",
+            "outputs": [
+                "x64\\Release\\Ast.cppm.ifc.dt.module.json",
+                "x64\\Release\\Ast.cppm.ifc.dt.d.json",
+                "x64\\Release\\ohana.ast.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.ast",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\ast.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

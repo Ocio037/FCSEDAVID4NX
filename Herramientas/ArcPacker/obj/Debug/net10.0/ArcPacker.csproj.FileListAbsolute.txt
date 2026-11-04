@@ -1,0 +1,15 @@
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.AssemblyInfoInputs.cache
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.AssemblyInfo.cs
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.csproj.CoreCompileInputs.cache
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\bin\Debug\net10.0\ArcPacker.exe
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\bin\Debug\net10.0\ArcPacker.deps.json
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\bin\Debug\net10.0\ArcPacker.runtimeconfig.json
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\bin\Debug\net10.0\ArcPacker.dll
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\bin\Debug\net10.0\ArcPacker.pdb
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.dll
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\refint\ArcPacker.dll
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.pdb
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.genruntimeconfig.cache
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ref\ArcPacker.dll
+C:\Project_MX\Uadeo\videojuegos\Herramientas\ArcPacker\obj\Debug\net10.0\ArcPacker.csproj.Up2Date

@@ -1,0 +1,23 @@
+{
+    "StartEvent": [
+        {
+            "int1": 1,
+            "int2": 1,
+            "string": "ActionTest"
+        },
+        {
+            "int1": 2,
+            "int2": 1,
+            "string": "ActionTest"
+        }
+    ],
+    "events": [],
+    "format": "EventEditor",
+    "maxFrames": 240,
+    "tracks": [
+        {
+            "name": "Track 1"
+        }
+    ],
+    "version": 7
+}

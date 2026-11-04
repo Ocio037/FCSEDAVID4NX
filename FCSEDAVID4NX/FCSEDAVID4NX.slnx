@@ -1,0 +1,22 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/Prg/">
+    <Project Path="Prg/Main/Main.vcxproj" Id="a89bcf5b-1161-44a0-9aef-c1e6ce1458b3" />
+    <Project Path="Prg/Map/Map.vcxproj" Id="2c0041a0-539d-43fc-a5c5-539e06d9e316" />
+    <Project Path="Prg/Player/Player.vcxproj" Id="3d46f922-1e19-42da-9ca5-3bba1915b00d" />
+    <Project Path="Prg/Scene/Scene.vcxproj" Id="84f9066f-d4de-4670-87c8-be23d1e66ecd" />
+    <Project Path="Prg/System/System.vcxproj" Id="5a33695b-cd81-4fe6-be49-fd49bcb5cb9e" />
+    <Project Path="Prg/Util/Util.vcxproj" Id="cbcdecab-f634-4458-bdd6-24bdb47da033" />
+  </Folder>
+  <Folder Name="/Lib/">
+    <Project Path="../Lib/Font/Font.vcxproj" Id="b98ec423-e1fe-4907-8973-356554804cd4" />
+    <Project Path="../Lib/gx/gx.vcxproj" Id="12001f4f-8f12-4b69-8df3-283bbb79e18a" />
+    <Project Path="../Lib/mem/mem.vcxproj" Id="70652756-7787-4727-b207-30faa33970ce" />
+    <Project Path="../Lib/ohn/ohn.vcxproj" Id="7f19d129-a677-4710-96d3-f19ee1389a36" />
+  </Folder>
+  <Folder Name="/ソリューション項目/">
+    <File Path="FCSEDAVID4NX.props" />
+  </Folder>
+</Solution>

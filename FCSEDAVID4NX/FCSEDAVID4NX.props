@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<PreprocessorDefinitions>_CONSOLE;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>
+				$(SolutionDir)Prg\Util\include;
+				$(SolutionDir)Prg\System\include;
+				$(SolutionDir)Prg\Map\include;
+				$(SolutionDir)Prg\Player\include;
+				$(SolutionDir)Prg\Scene\include;
+				$(SolutionDir)Prg\Main\include;
+				$(SolutionDir)..\Lib\Time\include;
+				$(SolutionDir)..\Lib\ohn\include;
+				$(SolutionDir)..\FocaSys\FocaSys\include;
+				$(SolutionDir)..\Lib\macros\include;
+				$(SolutionDir)..\Lib\mem\include;
+				$(SolutionDir)..\Lib\gx\include;
+				$(SolutionDir)..\Lib\Font\include;
+				C:\VulkanSDK\1.4.350.0\Include;
+				%(AdditionalIncludeDirectories)
+			</AdditionalIncludeDirectories>
+		</ClCompile>
+	</ItemDefinitionGroup>
+</Project>

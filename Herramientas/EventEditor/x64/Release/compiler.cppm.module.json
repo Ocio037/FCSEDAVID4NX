@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Compiler.cppm.obj",
+            "outputs": [
+                "C:\\Project_MX\\Uadeo\\videojuegos\\Herramientas\\EventEditor\\x64\\Release\\vc145.pdb",
+                "x64\\Release\\",
+                "C:\\Project_MX\\Uadeo\\videojuegos\\Herramientas\\EventEditor\\x64\\Release\\Compiler.cppm.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.compiler",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\compiler.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "ohana.bytecode"
+                },
+                {
+                    "logical-name": "ohana.ast"
+                }
+            ]
+        }
+    ]
+}

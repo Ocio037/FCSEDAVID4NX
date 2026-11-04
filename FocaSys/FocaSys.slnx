@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/ソリューション項目/">
+    <File Path="FocaSys.props" />
+  </Folder>
+  <Project Path="FocaSys/FocaSys.vcxproj" Id="2cddf856-c2d9-4460-b761-dd12b00f40a1" />
+</Solution>

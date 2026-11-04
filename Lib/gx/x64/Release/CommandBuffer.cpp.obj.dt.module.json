@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\CommandBuffer.obj",
+            "outputs": [
+                "x64\\Release\\CommandBuffer.cpp.obj.dt.module.json",
+                "x64\\Release\\CommandBuffer.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

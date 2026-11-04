@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Lexer.obj",
+            "outputs": [
+                "x64\\Release\\Lexer.cppm.ifc.dt.module.json",
+                "x64\\Release\\Lexer.cppm.ifc.dt.d.json",
+                "x64\\Release\\ohana.lexer.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ohana.lexer",
+                    "source-path": "c:\\project_mx\\uadeo\\videojuegos\\herramientas\\eventeditor\\ohanascript\\include\\lexer.cppm",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Lz77.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArcFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileHolder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArchiveHolder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileLoader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Lz77.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ArcFile.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileReader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileHolder.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ArchiveHolder.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileLoader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

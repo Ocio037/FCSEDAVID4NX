@@ -1,0 +1,28 @@
+{
+    "StartEvent": [
+        {
+            "string": "",
+            "int1": 0,
+            "int2": 1
+        }
+    ],
+    "events": [
+        {
+            "description": "",
+            "endFrame": 9,
+            "name": "Event 1",
+            "scriptFile": "Fes/Event_1.ohs",
+            "startFrame": 0,
+            "track": 0,
+            "type": "Script"
+        }
+    ],
+    "format": "EventEditor",
+    "maxFrames": 240,
+    "tracks": [
+        {
+            "name": "Track 1"
+        }
+    ],
+    "version": 7
+}
